@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@100&family=Dosis:wght@200;300;400&family=Edu+SA+Beginner&family=Itim&family=PT+Sans&family=Philosopher:wght@700&family=Poiret+One&family=Ysabeau+Infant:wght@1;100&display=swap');
+
+/* font-family: 'Alegreya Sans SC', sans-serif;
+font-family: 'Dosis', sans-serif;
+font-family: 'Itim', cursive;
+font-family: 'Edu SA Beginner', cursive;
+font-family: 'Philosopher', sans-serif;
+font-family: 'Poiret One', cursive;
+font-family: 'PT Sans', sans-serif;
+font-family: 'Ysabeau Infant', sans-serif; */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.navbar {
+    background-color:  #09687e;
+    box-shadow: 10px 10px 15px;
+    position: sticky;
+    /* position: -webkit-sticky; */
+    top: -1px; 
+    /* font-weight: 500; */
+    
+}
+
+ .navbar-collapse{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 20px;
+   
+    
+}
+
+.nav-link{
+    /* color: yellow !important; */
+    color: white !important;
+ 
+    
+}
+
+.nav-item:hover{
+    background-color: #ef4d75;
+    border-radius: 5px;
+}
+
+.nav-icon {
+    border-radius: 50%;
+    width: 90px;
+    padding: 2px;
+    margin-right: 10px;
+    box-shadow: 0px 0px 15px;
+    /* Espacio entre la imagen y el span */
+}
+
+.jumbotron{
+  
+    background-image: url(img/Color\ Space.png);
+    background-size: cover;
+    background-position: center;
+    border-top: 0px solid white;
+    
+    
+    /* color: yellow !important;  */
+}
+.jumbotron h1{
+    color: white; 
+    text-shadow: 0px 0px 1px white;
+    text-align: center;
+}
+
+
+.button1 {
+    background-color: #ef4d75;
+    color: white;
+    border-radius: 10px;
+    text-decoration: none;
+    padding: 5px 35px;
+    font-size: 20px;
+}
+
+.button1:hover{
+    background-color: plum;
+    
+}
+.jumbotron .btn:hover{
+    background-color: plum;
+    color: white
+}
+
+/* .jumbotron .btn:active {
+    border: 3px solid rgba(0, 128, 0, 0.6)
+}  */
+
+h2{
+    background-color: orange;
+    text-align: center;
+    color: #333;
+    padding: 10px;
+    margin-bottom: 0;
+}
+
+.nleft {
+    height: 450px;
+    /* background-image: url(img/665091.jpg); */
+    background-size: cover;
+    background-position: center;
+  
+}
+
+footer {
+    width: 100%;
+    background-color:#022836;
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    padding: 20px;
+    font-family: 'PT Sans', sans-serif;
+   
+    
+
+}
+
+footer p {
+    margin-bottom: 20px;
+}
