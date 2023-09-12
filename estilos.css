@@ -147,7 +147,7 @@ h2 {
 }
 
 
-/* FOOTER */
+/* footer */
 footer {
     width: 100%;
     background-color: #073846;
@@ -156,7 +156,8 @@ footer {
     font-size: 15px;
     padding: 15px;
     font-family: 'PT Sans', sans-serif;
-    margin-top: auto;
+    margin-top: 20px;
+    
 
 }
 
@@ -174,8 +175,44 @@ footer p {
     letter-spacing: 20px;
 }
 
+.subir {
+    height: 40px;
+    width: 40px;
+    color: #073846;
+    background-color: white;
+    position:fixed;
+    right: 40px;
+    bottom: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 30px;
+    box-shadow: 0 0 8px #073846;
 
-/* SKILLS */
+}
+/* FIN HOME */
+
+/* INICIA SOBRE MI */
+
+.nleft-sobremi {
+    height: 450px;
+    width: 350;
+    background-image: url(img/foto.jpeg);
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+
+.nright-sobremi{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* INICIA SKILLS */
 .menu-skills{
     background-image: url(img/background-contacto.avif);
     background-position: center;
@@ -237,3 +274,47 @@ footer p {
     background-color: #ef4d75;
     color: white;
 }
+/* FIN SKILLS */
+
+/* Inicia PROYECTOS */
+.proyectos {
+    
+    height: calc(100vh - 100px);
+    width: 100%;
+    background-color: #F7F7F7;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 20px;
+}
+.proyectos img{
+    width: 550px;
+    height: 400px;
+}
+
+/* fin PROYECTOS */
+
+
+/* INICIA CONTACTAME */
+.formulario{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgba(255, 255, 255, 0.432);
+    margin: auto;
+    width: 90%;
+    max-width: 300px;
+    height: auto;
+    padding: 72px 32px 15px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px -5px; 
+    text-align: center; 
+}
+
+.formulario input{
+    font-family: 'Dosis', sans-serif;
+    color: 777;
+    padding: 0px 10px 0px 10px;   
+    cursor: pointer; 
+   
+}
+
+/* fin CONTACTAME */
