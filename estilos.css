@@ -17,14 +17,14 @@ font-family: 'Ysabeau Infant', sans-serif; */
 }
 
 html {
-    min-height: 100%;
+    height: 100%;
     position: relative;
 }
 
 body {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    min-height: 100%;
 
 
 }
@@ -45,8 +45,6 @@ body {
     display: flex;
     justify-content: flex-end;
     font-size: 20px;
-    padding: ;
-
 
 }
 
@@ -150,11 +148,11 @@ h2 {
 
 /* footer */
 footer {
+    margin-top:auto; 
     width: 100%;
     background-color: #073846;
-    position: absolute;
+    /* position: absolute; */
     bottom: 0;
-    
     color: white;
     text-align: center;
     font-size: 15px;
@@ -225,13 +223,14 @@ h1 {
     justify-content: center;
     align-items: center;
     font-size: 25px;
-    color: #073846;    
+    color: #073846;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     border: 5px dotted #073846;
     border-radius: 20px;
     background-image: url(./img/pexels-miguel-á-padriñán-255379.jpg);
     background-position: center;
     background-size: cover;
+    margin-bottom: 15px;
 }
 
 .nright-sobremi:active {
@@ -243,12 +242,12 @@ h1 {
     transition: 1.1s;
 
 }
+
 /* FIN SOBRE MI */
 
 
 /* INICIA SKILLS */
 .menu-skills {
-    background-image: url(img/background-contacto.avif);
     background-position: center;
     background-size: cover;
 }
@@ -265,6 +264,7 @@ h1 {
     color: #073846;
     padding-bottom: 15px;
     background-color: white;
+    margin-bottom: 15px;
 
 
 }
