@@ -17,15 +17,16 @@ font-family: 'Ysabeau Infant', sans-serif; */
 }
 
 html {
-    height: 100%;
+    min-height: 100%;
+    position: relative;
 }
 
 body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    
-    
+
+
 }
 
 /* BARRA NAVEGACION */
@@ -106,18 +107,18 @@ body {
 
 .button1:hover {
     background-color: plum;
-    color: #333;
+    color: white;
+    transform: scale(0.9);
+    transition: 1.1s;
 
 }
 
 .jumbotron .btn:hover {
     background-color: plum;
-    color: white
+    color: white;
+
 }
 
-/* .jumbotron .btn:active {
-    border: 3px solid rgba(0, 128, 0, 0.6)
-}  */
 
 h2 {
     background-color: white;
@@ -137,13 +138,14 @@ h2 {
     border-radius: 20px;
 }
 
-.nright{
+.nright {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     font-size: 20px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 250px;
 }
 
 
@@ -151,13 +153,15 @@ h2 {
 footer {
     width: 100%;
     background-color: #073846;
+    position: absolute;
+    bottom: 0;
+    
     color: white;
     text-align: center;
     font-size: 15px;
     padding: 15px;
     font-family: 'PT Sans', sans-serif;
-    margin-top: 20px;
-    
+
 
 }
 
@@ -180,7 +184,7 @@ footer p {
     width: 40px;
     color: #073846;
     background-color: white;
-    position:fixed;
+    position: fixed;
     right: 40px;
     bottom: 40px;
     text-align: center;
@@ -189,96 +193,131 @@ footer p {
     box-shadow: 0 0 8px #073846;
 
 }
+
 /* FIN HOME */
 
 /* INICIA SOBRE MI */
 
+
+h1 {
+    text-align: center;
+    padding: 10px;
+
+}
+
+
 .nleft-sobremi {
     height: 450px;
     width: 350;
-    background-image: url(img/foto.jpeg);
+    background-image: url(img/miFoto.jpeg);
     background-size: cover;
     background-position: center;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     border-radius: 20px;
+
 }
 
-.nright-sobremi{
+.nright-sobremi {
+    height: 450px;
+    width: 350;
     display: flex;
+    text-align: center;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 20px;
+    font-size: 25px;
+    color: #073846;    
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: 5px dotted #073846;
+    border-radius: 20px;
+    background-image: url(./img/pexels-miguel-á-padriñán-255379.jpg);
+    background-position: center;
+    background-size: cover;
 }
 
+.nright-sobremi:active {
+    font-size: 25px;
+    border: 8px dotted #ef4d75;
+    background-color: #073846;
+    color: #09687e;
+    transform: scale(0.9);
+    transition: 1.1s;
+
+}
+/* FIN SOBRE MI */
+
+
 /* INICIA SKILLS */
-.menu-skills{
+.menu-skills {
     background-image: url(img/background-contacto.avif);
     background-position: center;
     background-size: cover;
 }
+
 .article {
     display: flex;
     flex-direction: column;
-    justify-content:space-between;
+    justify-content: space-between;
     align-items: center;
     border: 1px solid black;
     text-align: center;
     border-radius: 10px;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color:#073846;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #073846;
     padding-bottom: 15px;
     background-color: white;
-    
-    
+
+
 }
 
-.languages-logo{
+.languages-logo {
     height: 150px;
     width: 50%;
     /* border-radius: 8px 8px 0px 0px; */
     /* background-image: url(img/logo2.png);  */
     background-size: cover;
     background-position: center;
-    
+
 }
 
-.article h3{
+.article h3 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 25px;
 
 }
 
-.article p{
+.article p {
     text-align: center;
     padding: 5px;
     margin-bottom: 20px;
-    
+
 }
 
-.button-skills{
+.button-skills {
     border: 2px solid #073846;
     background-color: #073846;
     border-radius: 20px;
     text-decoration: none;
     font-size: 25px;
-    border-style:double;
+    border-style: double;
     padding: 8px;
-    color:white;
+    color: white;
     box-shadow: 2px 1px #073846;
-     
+
 }
 
-.button-skills:hover{
+.button-skills:hover {
     background-color: #ef4d75;
     color: white;
 }
+
+
+
 /* FIN SKILLS */
 
 /* Inicia PROYECTOS */
 .proyectos {
-    
+
     height: calc(100vh - 100px);
     width: 100%;
     background-color: #F7F7F7;
@@ -287,7 +326,8 @@ footer p {
     background-repeat: no-repeat;
     padding-top: 20px;
 }
-.proyectos img{
+
+.proyectos img {
     width: 550px;
     height: 400px;
 }
@@ -296,7 +336,7 @@ footer p {
 
 
 /* INICIA CONTACTAME */
-.formulario{
+.formulario {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: rgba(255, 255, 255, 0.432);
     margin: auto;
@@ -305,16 +345,16 @@ footer p {
     height: auto;
     padding: 72px 32px 15px;
     border-radius: 10px;
-    box-shadow: 0 5px 10px -5px; 
-    text-align: center; 
+    box-shadow: 0 5px 10px -5px;
+    text-align: center;
 }
 
-.formulario input{
+.formulario input {
     font-family: 'Dosis', sans-serif;
     color: 777;
-    padding: 0px 10px 0px 10px;   
-    cursor: pointer; 
-   
+    padding: 0px 10px 0px 10px;
+    cursor: pointer;
+
 }
 
 /* fin CONTACTAME */
